@@ -1,0 +1,234 @@
+.header {
+    background-color: white;
+    border-bottom: black 3px solid;
+    height: 100px;
+}
+
+.logoHeader {
+    margin-left: 13%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.loginBtn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    float: right;
+    --width: 150px;
+    --timing: 2s;
+    border: 0;
+    width: var(--width);
+    padding-block: 1em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    background: black;
+    transition: all 0.2s;
+    border-radius: 3px;
+  }
+  
+.loginBtn:hover {
+    background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+    animation: var(--timing) linear dance6123 infinite;
+    transform: scale(1.1) translateY(-1px);
+  }
+  
+  @keyframes dance6123 {
+    to {
+      background-position: var(--width);
+    }
+  }
+
+.land1 {
+    background: url('../../assets/images/land1.png') no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.land1Btn {
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 28%;
+    margin-bottom: 8%;
+    width: 20%;
+    height: 86px;
+    font-family: "MabryProMedium";
+    font-size: 2.1em;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #171717;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all .4s;
+    position: relative;
+    right: 35%;
+}
+
+.land1Btn:hover {
+    border-radius: 5px;
+    transform: translateY(-10px);
+    box-shadow: 0 7px 0 -2px #f85959,
+                0 15px 0 -4px #4A89DC,
+                0 16px 10px -3px #FFCE54;
+}
+
+.land1Btn:active{
+    transition: all 0.2s;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 0 -2px #f85959,
+                0 8px 0 -4px #4A89DC,
+                0 12px 10px -3px #FFCE54;
+                ;
+}
+
+.land1Btn:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.1em 0.1em;
+}
+
+.land2 {
+    background: url('../../assets/images/land2.png') no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.land2Btn {
+    content: "";
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 32%;
+    margin-bottom: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    cursor: pointer;
+    font-family: "MabryProBold";
+  background-color: transparent;
+  color: #ED5565;
+  border: none;
+  font-size: 1.2em;
+  position: relative;
+  z-index: 3;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.BtnA::before {
+    content: "";
+    border: 2px solid black;
+    position: absolute;
+    left: -10px;
+    top: -5px;
+    bottom: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+
+  .BtnTS::before {
+    content: "";
+    border: 2px solid black;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    bottom: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+
+  .BtnLDR::before {
+    content: "";
+    border: 2px solid black;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    bottom: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+
+
+  .BtnA:hover::before {
+    bottom: 6%;
+    width: 85%;
+    padding: 10%;
+    height: 60%;
+    background-color: white;
+    z-index: -1;
+    border: black solid 2px;
+    padding-right: 20%;
+}
+
+  .BtnTS:hover::before {
+    bottom: 1%;
+    width: 90%;
+    padding: 10%;
+    height: 70%;
+    background-color: white;
+    z-index: -1;
+    border: black solid 2px;
+}
+  
+.BtnLDR:hover::before {
+    bottom: 1%;
+    width: 85%;
+    padding: 10%;
+    height: 70%;
+    background-color: white;
+    z-index: -1;
+    border: black solid 2px;
+}
+  
+.land2Btn:hover {
+    color: #282828;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footerLink {
+    text-decoration: none;
+    color: white;
+}
