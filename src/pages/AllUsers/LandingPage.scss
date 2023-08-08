@@ -4,13 +4,13 @@
     height: 100px;
 }
 
-.logoHeader {
+.logo-header {
     margin-left: 13%;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.loginBtn {
+.login-button {
     margin-top: 30px;
     margin-bottom: 30px;
     float: right;
@@ -27,7 +27,7 @@
     border-radius: 3px;
   }
   
-.loginBtn:hover {
+.login-button:hover {
     background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
     animation: var(--timing) linear dance6123 infinite;
     transform: scale(1.1) translateY(-1px);
@@ -44,7 +44,7 @@
     background-size: 100% 100%;
 }
 
-.land1Btn {
+.land1-button {
     background-color: black;
     color: white;
     border: none;
@@ -65,7 +65,7 @@
     right: 35%;
 }
 
-.land1Btn:hover {
+.land1-button:hover {
     border-radius: 5px;
     transform: translateY(-10px);
     box-shadow: 0 7px 0 -2px #f85959,
@@ -73,7 +73,7 @@
                 0 16px 10px -3px #FFCE54;
 }
 
-.land1Btn:active{
+.land1-button:active{
     transition: all 0.2s;
     transform: translateY(-5px);
     box-shadow: 0 2px 0 -2px #f85959,
@@ -82,7 +82,7 @@
                 ;
 }
 
-.land1Btn:active {
+.land1-button:active {
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.1em 0.1em;
 }
@@ -92,7 +92,7 @@
     background-size: 100% 100%;
 }
 
-.land2Btn {
+.land2-button {
     content: "";
     background-color: black;
     color: white;
@@ -116,7 +116,7 @@
   -o-transition: 0.5s;
 }
 
-.BtnA::before {
+.button-aurora::before {
     content: "";
     border: 2px solid black;
     position: absolute;
@@ -138,7 +138,7 @@
     -o-transition: 0.5s;
   }
 
-  .BtnTS::before {
+  .button-taylor::before {
     content: "";
     border: 2px solid black;
     position: absolute;
@@ -160,7 +160,7 @@
     -o-transition: 0.5s;
   }
 
-  .BtnLDR::before {
+  .button-lana::before {
     content: "";
     border: 2px solid black;
     position: absolute;
@@ -183,7 +183,7 @@
   }
 
 
-  .BtnA:hover::before {
+  .button-aurora:hover::before {
     bottom: 6%;
     width: 85%;
     padding: 10%;
@@ -194,7 +194,7 @@
     padding-right: 20%;
 }
 
-  .BtnTS:hover::before {
+  .button-taylor:hover::before {
     bottom: 1%;
     width: 90%;
     padding: 10%;
@@ -204,7 +204,7 @@
     border: black solid 2px;
 }
   
-.BtnLDR:hover::before {
+.button-lana:hover::before {
     bottom: 1%;
     width: 85%;
     padding: 10%;
@@ -214,7 +214,7 @@
     border: black solid 2px;
 }
   
-.land2Btn:hover {
+.land2-button:hover {
     color: #282828;
 
 }
@@ -228,7 +228,7 @@ img {
     color: white;
 }
 
-.footerLink {
+.footer-link {
     text-decoration: none;
     color: white;
 }

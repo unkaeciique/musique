@@ -18,23 +18,23 @@ export default class LandingPage extends React.Component {
       <>
         <Layout className="layout">
           <Header className="header">
-            <img src={images.logodark} className="logoHeader" />
-            <button className="loginBtn">Login</button>
+            <img src={images.logodark} className="logo-header" />
+            <button className="login-button">Login</button>
           </Header>
           <Content>
             <div className="land1">
-              <button className="land1Btn">Join us now</button>
+              <button className="land1-button">Join us now</button>
             </div>
 
             <div className="land2">
               <div>
-                <button className="land2Btn BtnA" disabled>
+                <button className="land2-button button-aurora" disabled>
                   AURORA
                 </button>
-                <button className="land2Btn BtnTS" disabled>
+                <button className="land2-button button-taylor" disabled>
                   Taylor Swift
                 </button>
-                <button className="land2Btn BtnLDR" disabled>
+                <button className="land2-button button-lana" disabled>
                   Lana Del Rey
                 </button>
               </div>
@@ -63,7 +63,7 @@ export default class LandingPage extends React.Component {
                   icon={<FaFacebook />}
                   size={"large"}
                   ghost
-                  className="footerLink"
+                  className="footer-link"
                 />
                 <Button
                   type="link"
@@ -71,7 +71,7 @@ export default class LandingPage extends React.Component {
                   icon={<FaTwitter />}
                   size={"large"}
                   ghost
-                  className="footerLink"
+                  className="footer-link"
                 />
                 <Button
                   type="link"
@@ -79,7 +79,7 @@ export default class LandingPage extends React.Component {
                   icon={<FaInstagram />}
                   size={"large"}
                   ghost
-                  className="footerLink"
+                  className="footer-link"
                 />
                 <Button
                   type="link"
@@ -87,7 +87,7 @@ export default class LandingPage extends React.Component {
                   icon={<FaPinterest />}
                   size={"large"}
                   ghost
-                  className="footerLink"
+                  className="footer-link"
                 />
               </Space>
             </Space>
