@@ -6,12 +6,13 @@ import "./fonts/MabryPro-Medium.ttf";
 import "./fonts/MabryPro-Light.ttf";
 import "./fonts/MabryPro-Italic.ttf";
 
-import LandingPage from "./pages/AllUsers/LandingPage";
+import LandingPage from "./pages/AllUsers/LandingPage/LandingPage";
+import Login from "./pages/AllUsers/Login/Login";
 
 function App() {
   return (
     <>
-      <LandingPage />
+      <Login />
     </>
   );
 }

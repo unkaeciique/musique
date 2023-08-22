@@ -5,6 +5,7 @@ import land4 from "./land4.png";
 import land5 from "./land5.png";
 import logodark from "./logodark.png";
 import logolight from "./logolight.png";
+import music from "./music.gif";
 
 export default {
   land1: land1,
@@ -14,4 +15,5 @@ export default {
   land5: land5,
   logodark: logodark,
   logolight: logolight,
+  music: music,
 };
