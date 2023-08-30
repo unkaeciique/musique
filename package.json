@@ -12,13 +12,17 @@
   "dependencies": {
     "@nivo/core": "^0.83.0",
     "@react-spring/web": "^9.7.2",
-    "@twilio-paste/core": "^19.2.0",
+    "@twilio-paste/core": "^20.1.0",
     "@twilio-paste/icons": "^11.1.0",
     "antd": "^5.7.3",
+    "firebase": "^10.2.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-firebase-hooks": "^5.1.1",
     "react-icons": "^4.10.1",
+    "react-pro-sidebar": "^1.1.0-alpha.1",
+    "react-router-dom": "^6.15.0",
     "sass": "^1.64.1"
   },
   "devDependencies": {

@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import images from "../../../assets/images/images";
-import { Layout, Button, Space } from "antd";
+import { Button, Space } from "antd";
 import "./LandingPage.scss";
 
 import {
@@ -10,88 +11,53 @@ import {
   FaPinterest,
 } from "react-icons/fa";
 
-const { Header, Content, Footer } = Layout;
-
 const LandingPage = () => {
   return (
     <>
-      <Layout className="layout">
-        <Header className="header">
-          <img src={images.logodark} className="logo-header" />
-          <button className="login-button">Login</button>
-        </Header>
-        <Content>
-          <div className="land1">
-            <button className="land1-button">Join us now</button>
-          </div>
+      <nav className="bg-white">
+        <img src={images.logodark} className="center" />
+      </nav>
 
-          <div className="land2">
-            <div>
-              <button className="land2-button button-aurora" disabled>
-                AURORA
-              </button>
-              <button className="land2-button button-taylor" disabled>
-                Taylor Swift
-              </button>
-              <button className="land2-button button-lana" disabled>
-                Lana Del Rey
-              </button>
-            </div>
-          </div>
+      <section>
+        <div className="land1"></div>
+      </section>
 
-          <div className="land3">
-            <img src={images.land3} />
-          </div>
+      <footer className="bg-black">
+        <Space size={700}>
+          <img src={images.logolight} />
 
-          <div className="land4">
-            <img src={images.land4} />
-          </div>
-
-          <div className="land5">
-            <img src={images.land5} />
-          </div>
-        </Content>
-        <Footer className="footer">
-          <Space size={700}>
-            <img src={images.logolight} />
-
-            <Space size={26}>
-              <Button
-                type="link"
-                shape="circle"
-                icon={<FaFacebook />}
-                size={"large"}
-                ghost
-                className="footer-link"
-              />
-              <Button
-                type="link"
-                shape="circle"
-                icon={<FaTwitter />}
-                size={"large"}
-                ghost
-                className="footer-link"
-              />
-              <Button
-                type="link"
-                shape="circle"
-                icon={<FaInstagram />}
-                size={"large"}
-                ghost
-                className="footer-link"
-              />
-              <Button
-                type="link"
-                shape="circle"
-                icon={<FaPinterest />}
-                size={"large"}
-                ghost
-                className="footer-link"
-              />
-            </Space>
+          <Space size={26}>
+            <Button
+              type="link"
+              shape="circle"
+              icon={<FaFacebook />}
+              size={"large"}
+              className="footer-link"
+            />
+            <Button
+              type="link"
+              shape="circle"
+              icon={<FaTwitter />}
+              size={"large"}
+              className="footer-link"
+            />
+            <Button
+              type="link"
+              shape="circle"
+              icon={<FaInstagram />}
+              size={"large"}
+              className="footer-link"
+            />
+            <Button
+              type="link"
+              shape="circle"
+              icon={<FaPinterest />}
+              size={"large"}
+              className="footer-link"
+            />
           </Space>
-        </Footer>
-      </Layout>
+        </Space>
+      </footer>
     </>
   );
 };

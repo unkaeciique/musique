@@ -1,61 +1,65 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../../firebase";
+
+import { FcGoogle } from "react-icons/fc";
+import { Button } from "antd";
 
 function RegisterForm() {
-  const [state, setState] = React.useState({
-    name: "",
-    email: "",
-    password: "",
-  });
-  const handleChange = (evt: any) => {
-    const value = evt.target.value;
-    setState({
-      ...state,
-      [evt.target.name]: value,
-    });
-  };
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
 
-  const handleOnSubmit = (evt: any) => {
-    evt.preventDefault();
+  const onSubmit = async (e: any) => {
+    e.preventDefault();
 
-    const { name, email, password } = state;
-    alert(
-      `You are sign up with name: ${name} email: ${email} and password: ${password}`
-    );
-
-    for (const key in state) {
-      setState({
-        ...state,
-        [key]: "",
+    await createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        console.log(user);
+        navigate("/homepage");
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+        // ..
       });
-    }
   };
 
   return (
     <div className="form-container sign-up-container">
-      <form onSubmit={handleOnSubmit}>
+      <form>
         <h2>Register here.</h2>
         <input
           type="text"
           name="name"
-          value={state.name}
-          onChange={handleChange}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
           placeholder="Name"
         />
         <input
           type="email"
           name="email"
-          value={state.email}
-          onChange={handleChange}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
         />
         <input
           type="password"
           name="password"
-          value={state.password}
-          onChange={handleChange}
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
         />
-        <button className="form-button">Register</button>
+        <button className="form-button" onClick={onSubmit} type="submit">
+          Register
+        </button>
+        <Button type="default" shape="round" icon={<FcGoogle />} size="large" />
       </form>
     </div>
   );
