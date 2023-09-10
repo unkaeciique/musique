@@ -99,18 +99,18 @@ const ThoughtPost = () => {
               <div className="react">
                 <PiSmileyAngryBold className="angry" />
               </div>
-              <p className="text">
-                <PiPlusCircleBold /> <PiDotOutlineFill /> 62K{" "}
-              </p>
+              <div className="text flex flex-row justify-center items-center">
+                <PiPlusCircleBold /> <PiDotOutlineFill /> 62K
+              </div>
             </div>
             <div className="comment-button" onClick={togglePanel}>
-              <p className="comment-text">
+              <div className="comment-text flex flex-row justify-center items-center h-full">
                 <PiChatCenteredTextBold />
                 <PiDotOutlineFill /> 26K
-              </p>
+              </div>
             </div>
             <div className="direct-link">
-              <div className="direct">
+              <div className="direct flex flex-row justify-center items-center h-full">
                 <PiArrowRightBold style={{ fill: "white" }} />
               </div>
             </div>

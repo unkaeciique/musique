@@ -79,6 +79,7 @@
     height: 3.5em;
     border-top: solid 2px black;
     border-right: solid 2px black;
+    flex-direction: row;
   }
   
   .react {
@@ -121,7 +122,6 @@
     text-align: center;
     font-weight: bold;
     z-index: 3;
-    padding-top: 10px;
   }
 
   .react-figure {
@@ -194,7 +194,6 @@
 
   .comment-text {
     font-size: 1.1em;
-    margin: 17px 10px 17px 10px;
     text-align: center;
     color: black;
   }
@@ -209,8 +208,6 @@
     fill: white;
     text-align: center;
     font-size: 1.8em;
-    margin-top: 10px;
-    height: 40px;
   }
 
   .comment-panel {
