@@ -1,0 +1,253 @@
+* {
+    color: black;
+}
+
+.thought-post {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.post-container {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 3px 3px black;
+    width: 450px;
+    padding: 16px;
+    border: solid 2px black;
+    padding: 0;
+  }
+
+  .post-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+  }
+
+  .user-avatar {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+  }
+
+  .username {
+    font-family: 'MabryProBold';
+    margin-left: 10px;
+    padding-top: 5px;
+    font-size: 1.1em;
+  }
+
+  .post-image {
+    width: 100%;
+    border-bottom: 2px solid black;
+  }
+
+  .post-likes {
+    margin-bottom: 8px;
+  }
+
+  .caption {
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 30px;
+    color: black;
+    margin-bottom: 4px;
+  }
+
+  .time {
+    font-family: 'MabryProItalic';
+    color: gray;
+    font-size: 13px;
+    margin: 30px;
+    margin-top: 0;
+  }
+
+  .post-footer {
+    width: 100%;
+    height: 3.5em;
+  }
+  
+  .post-reacts {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 12em;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    height: 3.5em;
+    border-top: solid 2px black;
+    border-right: solid 2px black;
+  }
+  
+  .react {
+    width: 40px;
+    height: 40px;
+    background: lightgrey;
+    transition: .4s ease-in-out, .2s background-color ease-in-out, .2s background-image ease-in-out;
+    background: rgba(255, 255, 255, 0.596);
+    backdrop-filter: blur(5px);
+    border: 1px solid transparent;
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+  }
+
+  .post-reacts:hover {
+    width: 55%;
+    cursor: pointer;
+  }
+  
+  .post-reacts:hover .reacts-back {
+    opacity: 0;
+  }
+  
+  .post-reacts:hover .react {
+    margin: .2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .text {
+    position: absolute;
+    font-size: 1.1em;
+    transition: .4s ease-in-out;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    z-index: 3;
+    padding-top: 10px;
+  }
+
+  .react-figure {
+    margin-top: 2px;
+  }
+
+  .post-reacts:hover .text {
+    opacity: 0;
+    z-index: -3;
+  }
+
+  .react .smile {
+    opacity: 0;
+    transition: .2s ease-in-out;
+    fill: #F6BB42;
+  }
+  
+  .react:nth-child(2) {
+    border-radius: 0px;
+  }
+  
+  .react:nth-child(2) .meh {
+    opacity: 0;
+    transition: .2s ease-in-out;
+    fill: #37BC9B;
+  }
+  
+  .react:nth-child(3) {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+  }
+  
+  .react:nth-child(3) .sad {
+    opacity: 0;
+    transition: .2s ease-in-out;
+    fill: #4A89DC;
+  }
+  
+  .react:nth-child(4) {
+    border-radius: 0px;
+  }
+  
+  .react:nth-child(4) .angry {
+    opacity: 0;
+    transition: .2s ease-in-out;
+    fill: #DA4453;
+  }
+
+  .post-reacts:hover .smile {
+    opacity: 1;
+  }
+  
+  .post-reacts:hover .meh {
+    opacity: 1;
+  }
+  
+  .post-reacts:hover .sad {
+    opacity: 1;
+  }
+  
+  .post-reacts:hover .angry {
+    opacity: 1;
+  }
+
+  .comment-button {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    width: 35%;
+  }
+
+  .comment-text {
+    font-size: 1.1em;
+    margin: 17px 10px 17px 10px;
+    text-align: center;
+    color: black;
+  }
+  
+  .direct-link {
+    background: black;
+    font-size: 1em;
+    width: 25%;
+  }
+
+  .direct {
+    fill: white;
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 10px;
+    height: 40px;
+  }
+
+  .comment-panel {
+    position: relative;
+    width: 550px;
+    border: solid 2px black;
+    box-shadow: 3px 3px black;
+    border-radius: 6px;
+    margin-right: 40px;
+  }
+
+  .comment-single {
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+  }
+
+  .comment-avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: solid black 2px;
+    
+  }
+
+  .comment-desc {
+    color: black;  
+    margin: 0;
+    font-family: 'MabryProLight';
+    font-size: 1.3em;
+  }
+
+  .comment-username {
+    font-size: 1.2em;
+    color: black;
+    margin: 0;
+    
+  }
+
+  
