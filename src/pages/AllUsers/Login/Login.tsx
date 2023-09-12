@@ -24,24 +24,28 @@ const Login = () => {
           <div className="overlay">
             <div className="overlay-panel overlay-left">
               <h1>Welcome back friend</h1>
-              <p>If you already have an account, login here and have fun</p>
+              <p className="text-lg">
+                If you already have an account, login here and have fun
+              </p>
               <button
-                className="ghost"
+                className="ghost my-6"
                 id="signIn"
                 onClick={() => handleOnClick("signIn")}
               >
-                <BsArrowLeftShort /> Login
+                Login
               </button>
             </div>
             <div className="overlay-panel overlay-right">
               <h1>Join in with others now</h1>
-              <p>If you don't have an account yet, create one now</p>
+              <p className="text-lg">
+                If you don't have an account yet, create one now
+              </p>
               <button
-                className="ghost "
+                className="ghost my-6"
                 id="signUp"
                 onClick={() => handleOnClick("signUp")}
               >
-                Register <BsArrowRightShort />
+                Register
               </button>
             </div>
           </div>

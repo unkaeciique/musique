@@ -27,13 +27,14 @@ function LoginForm() {
   return (
     <div className="form-container sign-in-container">
       <form>
-        <h2>Login here.</h2>
+        <h2 className="text-3xl mb-4">Login here.</h2>
         <input
           type="email"
           placeholder="Email"
           name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          className="my-5 p-3"
         />
         <input
           type="password"
@@ -41,9 +42,14 @@ function LoginForm() {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          className="my-5 p-3"
         />
         <a href="#">Forgot your password?</a>
-        <button className="form-button" onClick={onLogin} type="submit">
+        <button
+          className="my-6 border-solid border-2 border-black rounded form-button"
+          onClick={onLogin}
+          type="submit"
+        >
           Login
         </button>
       </form>

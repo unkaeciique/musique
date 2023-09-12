@@ -34,13 +34,14 @@ function RegisterForm() {
   return (
     <div className="form-container sign-up-container">
       <form>
-        <h2>Register here.</h2>
+        <h2 className="text-3xl mb-4">Register here.</h2>
         <input
           type="text"
           name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Name"
+          className="my-3 p-3"
         />
         <input
           type="email"
@@ -48,6 +49,7 @@ function RegisterForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
+          className="my-5 p-3"
         />
         <input
           type="password"
@@ -55,11 +57,23 @@ function RegisterForm() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
+          className="my-5 p-3"
         />
-        <button className="form-button" onClick={onSubmit} type="submit">
+        <button
+          className="my-6 border-solid border-2 border-black rounded form-button"
+          onClick={onSubmit}
+          type="submit"
+        >
           Register
         </button>
-        <Button type="default" shape="round" icon={<FcGoogle />} size="large" />
+        <button className="my-6 border-solid border-2 border-black rounded form-button bg-white">
+          <div className="flex flex-row align-middle ">
+            <p className="mx-3 text-black normal-case">Continue with</p>
+            <span>
+              <FcGoogle />
+            </span>
+          </div>
+        </button>
       </form>
     </div>
   );

@@ -126,10 +126,17 @@ const ThoughtPost = () => {
                 src={images.avatar}
                 alt="User Avatar"
               />
-              <span>
+              <span className="mx-2">
                 <p className="comment-username">unkaieovire</p>
-                <p className="comment-desc">This is my fav.</p>
+                <p className="comment-desc my-2">This is my fav.</p>
               </span>
+            </div>
+            <div className="comment-input">
+              <img
+                className="comment-avatar"
+                src={images.avatar}
+                alt="User Avatar"
+              />
             </div>
           </div>
         )}
