@@ -8,12 +8,13 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .post-container {
     background-color: white;
     border-radius: 6px;
-    box-shadow: 3px 3px black;
+    box-shadow: 5px 5px 0px black;
     width: 450px;
     padding: 16px;
     border: solid 2px black;
@@ -190,12 +191,14 @@
     border-top: 2px solid black;
     border-right: 2px solid black;
     width: 35%;
+    transition: 300ms ease-in-out;
   }
 
   .comment-text {
     font-size: 1.1em;
     text-align: center;
     color: black;
+    font-weight: bold;
   }
   
   .direct-link {
@@ -214,37 +217,35 @@
     position: relative;
     width: 550px;
     border: solid 2px black;
-    box-shadow: 3px 3px black;
+    box-shadow: 5px 5px 0px black;
     border-radius: 6px;
     margin-right: 40px;
   }
 
-  .comment-single {
-    display: flex;
-    margin: 10px;
-    flex-direction: row;
-  }
-
-  .comment-avatar {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    border: solid black 2px;
-    
-  }
-
   .comment-desc {
-    color: black;  
-    margin: 0;
     font-family: 'MabryProLight';
-    font-size: 1.3em;
   }
 
-  .comment-username {
-    font-size: 1.2em;
-    color: black;
-    margin: 0;
-    
-  }
+.comment-time {
+  font-family: "MabryProItalic";
+}
 
+.comment-input {
+  box-shadow: 2px 2px 0px black;
+  transition: 300ms ease-in-out;
+}
+
+.comment-input:focus {
+  border: solid 2px black;
+  outline: none;
+}
+
+.send-button {
+  box-shadow: 2px 2px 0px black;
+}
+
+.send-button:active {
+  box-shadow: none;
+    transform: translate(3px, 3px);
+}
   

@@ -3,7 +3,7 @@ import "./Login.scss";
 import LoginForm from "./LoginForm";
 import RegisterForm from "./RegisterForm";
 
-import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
+import { PiArrowLeftBold, PiArrowRightBold } from "react-icons/pi";
 
 const Login = () => {
   const [type, setType] = useState("signIn");
@@ -28,11 +28,12 @@ const Login = () => {
                 If you already have an account, login here and have fun
               </p>
               <button
-                className="ghost my-6"
+                className="ghost my-6 flex flex-row justify-center items-center"
                 id="signIn"
                 onClick={() => handleOnClick("signIn")}
               >
-                Login
+                Login this way
+                <PiArrowRightBold style={{ fill: "white", marginLeft: 6 }} />
               </button>
             </div>
             <div className="overlay-panel overlay-right">
@@ -41,11 +42,12 @@ const Login = () => {
                 If you don't have an account yet, create one now
               </p>
               <button
-                className="ghost my-6"
+                className="ghost my-6 flex flex-row justify-center items-center"
                 id="signUp"
                 onClick={() => handleOnClick("signUp")}
               >
-                Register
+                <PiArrowLeftBold style={{ fill: "white", marginRight: 6 }} />
+                Register this way
               </button>
             </div>
           </div>

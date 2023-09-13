@@ -34,7 +34,7 @@ function LoginForm() {
           name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="my-5 p-3"
+          className="my-5 p-3 form-input"
         />
         <input
           type="password"
@@ -42,7 +42,7 @@ function LoginForm() {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="my-5 p-3"
+          className="my-5 p-3 form-input"
         />
         <a href="#">Forgot your password?</a>
         <button

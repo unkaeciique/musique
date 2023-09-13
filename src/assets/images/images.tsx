@@ -8,6 +8,7 @@ import logolight from "./logolight.png";
 import music from "./music.gif";
 import avatar from "./avatar.jpg";
 import bloom from "./bloom.webp";
+import avatar2 from "./avatar2.jpg";
 
 export default {
   land1: land1,
@@ -20,4 +21,5 @@ export default {
   music: music,
   avatar: avatar,
   bloom: bloom,
+  avatar2: avatar2,
 };

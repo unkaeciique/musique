@@ -15,9 +15,10 @@ import {
   PiSmileyMehBold,
   PiListBold,
   PiDotOutlineFill,
+  PiShootingStarBold,
 } from "react-icons/pi";
 import type { MenuProps } from "antd";
-import { Button, Dropdown, Space } from "antd";
+import { Button, Dropdown, Space, Input } from "antd";
 
 const items: MenuProps["items"] = [
   {
@@ -40,18 +41,6 @@ const items: MenuProps["items"] = [
 
 const ThoughtPost = () => {
   const [showPanel, setShowPanel] = useState(false);
-  const [contents, setContents] = useState([
-    "This is the first line of text.",
-    "This is the second line of text.",
-    "This is the third line of text.",
-    "This is the fourth line of text.",
-    "This is the fifth line of text.",
-    "This is the sixth line of text.",
-    "This is the seventh line of text.",
-    "This is the eighth line of text.",
-    "This is the ninth line of text.",
-    "This is the tenth line of text.",
-  ]);
 
   const togglePanel = () => {
     setShowPanel(!showPanel);
@@ -59,7 +48,7 @@ const ThoughtPost = () => {
 
   return (
     <div className="thought-post">
-      <div className="post-container">
+      <div className="post-container h-full">
         <div className="post-header">
           <img className="user-avatar" src={images.avatar} alt="User Avatar" />
           <div
@@ -104,7 +93,7 @@ const ThoughtPost = () => {
               </div>
             </div>
             <div className="comment-button" onClick={togglePanel}>
-              <div className="comment-text flex flex-row justify-center items-center h-full">
+              <div className="comment-text hover:bg-slate-200 flex flex-row justify-center items-center h-full">
                 <PiChatCenteredTextBold />
                 <PiDotOutlineFill /> 26K
               </div>
@@ -117,30 +106,61 @@ const ThoughtPost = () => {
           </Space.Compact>
         </div>
       </div>
-      <div>
-        {showPanel && (
-          <div className="comment-panel">
-            <div className="comment-single">
-              <img
-                className="comment-avatar"
-                src={images.avatar}
-                alt="User Avatar"
-              />
-              <span className="mx-2">
-                <p className="comment-username">unkaieovire</p>
-                <p className="comment-desc my-2">This is my fav.</p>
-              </span>
+
+      {showPanel && (
+        <div className="comment-panel max-h-96">
+          <div className="flex flex-row gap-1 m-2.5 justify-items-stretch">
+            <img
+              className="rounded-md w-14 h-14 border-solid border-black border-2"
+              src={images.avatar2}
+              alt="User Avatar"
+            />
+            <div className="mx-2">
+              <p className="m-0 text-xl text-black">diskosaiq</p>
+              <p className="text-xl text-black comment-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore
+              </p>
             </div>
-            <div className="comment-input">
-              <img
-                className="comment-avatar"
-                src={images.avatar}
-                alt="User Avatar"
-              />
-            </div>
+            <p className="comment-time text-slate-600">13h</p>
           </div>
-        )}
-      </div>
+
+          <div className="flex flex-row gap-1 m-2.5 justify-items-stretch">
+            <img
+              className="rounded-md w-14 h-14 border-solid border-black border-2"
+              src={images.avatar2}
+              alt="User Avatar"
+            />
+            <div className="mx-2">
+              <p className="m-0 text-xl text-black">diskosaiq</p>
+              <p className="text-xl text-black comment-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Semper risus in hendrerit
+              </p>
+            </div>
+            <p className="comment-time text-slate-600">13h</p>
+          </div>
+
+          <div className="flex flex-row m-4 sticky">
+            <img
+              className="rounded-md w-14 h-14 border-solid border-black border-2"
+              src={images.avatar}
+              alt="User Avatar"
+            />
+            <Space.Compact className="">
+              <input
+                placeholder="What do you think?"
+                className="comment-input mx-2 p-3 h-full w-80 rounded-md"
+              />
+              <button className="send-button flex flex-row gap-2 justify-center items-center text-white bg-blue-700 border-black border-solid rounded-md border-2">
+                Shoot
+                <PiShootingStarBold style={{ fill: "white" }} />
+              </button>
+            </Space.Compact>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

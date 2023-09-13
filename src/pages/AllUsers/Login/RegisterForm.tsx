@@ -41,7 +41,7 @@ function RegisterForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Name"
-          className="my-3 p-3"
+          className="my-3 p-3 form-input"
         />
         <input
           type="email"
@@ -49,7 +49,7 @@ function RegisterForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
-          className="my-5 p-3"
+          className="my-5 p-3 form-input"
         />
         <input
           type="password"
@@ -57,7 +57,7 @@ function RegisterForm() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
-          className="my-5 p-3"
+          className="my-5 p-3 form-input"
         />
         <button
           className="my-6 border-solid border-2 border-black rounded form-button"
