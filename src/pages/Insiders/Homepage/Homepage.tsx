@@ -4,7 +4,7 @@ import { auth } from "../../../firebase";
 import { useNavigate } from "react-router-dom";
 
 import "./Homepage.scss";
-import LightPage from "../../../layout/LightPage";
+import LightPage from "../../../layout/LightPage/LightPage";
 import ThoughtPost from "../../../components/ThoughtPost/ThoughtPost";
 
 const Homepage = () => {

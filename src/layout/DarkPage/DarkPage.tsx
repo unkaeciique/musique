@@ -4,28 +4,27 @@ import { Link } from "react-router-dom";
 import {
   PiChatsTeardropFill,
   PiHeadphonesFill,
-  PiPlusSquareBold,
   PiNewspaperClippingBold,
-  PiUserGearBold,
 } from "react-icons/pi";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
-import images from "../../src/assets/images/images";
-import "./pages.scss";
+import images from "../../assets/images/images";
+import "../LightPage/LightPage.scss";
 
 const LightPage = () => {
   return (
-    <section>
-      <Sidebar width="84%">
-        <div>
-          <img src={images.logodark} className="nav-logo" />
+    <section className="bg-black dark-nav">
+      <Sidebar width="100%" className="bg-black">
+        <div className="bg-black">
+          <img src={images.logolight} className="p-12" />
         </div>
         <Menu
           menuItemStyles={{
             button: {
-              color: "black",
+              color: "white",
               fontSize: "1.8em",
               height: "3em",
               paddingLeft: "3em",
+              backgroundColor: "black",
               //   [`&.active`]: {
               //     backgroundColor: "#13395e",
               //     color: "#000000",
@@ -35,32 +34,24 @@ const LightPage = () => {
         >
           <MenuItem
             component={<Link to="/homepage" />}
-            icon={<PiNewspaperClippingBold />}
+            icon={<PiNewspaperClippingBold fill="white" />}
           >
             {"  "}
             Feed
           </MenuItem>
           <MenuItem
             component={<Link to="/homepage" />}
-            icon={<PiChatsTeardropFill />}
+            icon={<PiChatsTeardropFill fill="white" />}
           >
             {"  "}
             Gossips
           </MenuItem>
           <MenuItem
             component={<Link to="/homepage" />}
-            icon={<PiHeadphonesFill />}
+            icon={<PiHeadphonesFill fill="white" />}
           >
             {"  "}
             Hollerspace
-          </MenuItem>
-          <MenuItem component={<div></div>} icon={<PiUserGearBold />}>
-            {"  "}
-            Find
-          </MenuItem>
-          <MenuItem component={<div></div>} icon={<PiPlusSquareBold />}>
-            {"  "}
-            Create
           </MenuItem>
         </Menu>
       </Sidebar>
